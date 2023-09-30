@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+
+  /* whole body tag styling */
+  body {
+    background-color: #d4e0e9;
+    color:rgb(138, 80, 124);
+  }
+
+  /* heading  */
+  h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    text-transform:capitalize;
+    font-weight: bolder;
+    text-shadow:2px -2px -2px green ;
+  }
+
+  /* form tag styling */
+  form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: #a0c8d6;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+/* input field */
+  form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 30px;
+  }
+
+/* search button */
+  form button {
+    padding: 0 40px;
+    height: 100%;
+    background: #124141;
+    color: #f7fbfe;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+  }
+  ::placeholder {
+    color: #f9f4f4;
+    font-size: 18px;
+  }
+
+/* show more button */
+  #show-more-btn {
+    background: #dafffb;
+    color: #001c30;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+  }
+
+/* when images appear how it should be displayed */
+  #search-result {
+    width: 90%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px
+  }
+
+
+  #search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+  
+  }
+
+  #search-result:hover img{
+    opacity: 0.9;
+    transition: 2px 2s ease-in-out 2s;
+  }
+
+  #search-result a{
+    text-decoration:none;
+  }
+  
+  /* Media Queries for responsiveness */
+  /* Adjust styles for smaller screens */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+    form {
+      height: 60px;
+    }
+    form input {
+      font-size: 16px;
+    }
+    form button {
+      font-size: 16px;
+    }
+    #search-result {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Adjust styles for even smaller screens */
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+      margin: 60px auto 30px;
+    }
+    form {
+      height: 50px;
+    }
+    form input {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+    form button {
+      font-size: 14px;
+      padding: 0 30px;
+    }
+    #search-result {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
+
+
+
+
